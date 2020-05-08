@@ -1,0 +1,24 @@
+server:
+    port: 9910
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://120.79.224.47:3306/accountbook?serverTimezone=UTC
+        username: root
+        password: Wu941206!!
+        max-idle: 10
+        max-wait: 10000
+        min-idle: 5
+        initial-size: 5
+    jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        time-zone: GMT+8
+mybatis:
+    config-location: classpath:/mybatis-config.xml
+    # JWT
+jwt:
+    header: Authorization
+    secret: mySecret
+    #token
+    expiration: 86400
+    tokenHead: "Bearer "
