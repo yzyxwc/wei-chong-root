@@ -28,6 +28,6 @@ public class FirstApi {
     })
     public String test(HttpServletRequest request){
         String userName = SecurityContextHolder.getContext().getAuthentication().getName();
-        return "hello" +userName;
+        return "hello" + userName;
     }
 }
